@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Intaker.Features;
 
-public record UpdateTodoCommand(int Id, string Name, string Description, string? UpdatedBy) : IRequest<Result<TodoDto, Error>>;
+public record UpdateTodoCommand(int Id, string Name, TodoStatus Status, string Description, string? UpdatedBy) : IRequest<Result<TodoDto, Error>>;
 public class UpdateTask : IRequestHandler<UpdateTodoCommand, Result<TodoDto, Error>>
 {
     private readonly TodoContext _context;

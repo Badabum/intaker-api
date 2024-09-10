@@ -24,7 +24,7 @@ public class UpdateTodoValidator : AbstractValidator<UpdateTodoDto>
             .NotEmpty();
     }
 }
-public record UpdateTodoDto(string Title, string Description, string? UpdatedBy);
+public record UpdateTodoDto(string Title, string Description, TodoStatus Status, string? UpdatedBy);
 public record TodoDto(
     string Name, 
     string Description,

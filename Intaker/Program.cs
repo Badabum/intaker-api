@@ -36,7 +36,7 @@ app.MapPost("/todos", async ([FromBody] AddTodoDto todo, [FromServices] IMediato
 });
 app.MapPut("/todos/{id}", async ([FromBody] UpdateTodoDto todo, [FromServices] IMediator mediator, int id) =>
 {
-    var result = await mediator.Send(new UpdateTodoCommand(id,todo.Title, todo.Description, todo.UpdatedBy));
+    var result = await mediator.Send(new UpdateTodoCommand(id,todo.Title,todo.Status, todo.Description, todo.UpdatedBy));
     if (result.IsFailure)
         return result.Error switch
         {
