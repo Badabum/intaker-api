@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Intaker", "Intaker\Intaker.csproj", "{721E8A9F-0CD0-4118-9EB4-AE75F938F925}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{51C66F2A-6216-48D0-8A97-F9E58483772F}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7B5D787B-A922-4949-8FFE-2603545C95F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{FE356ED1-9B35-4C18-82B8-0F8D0ED5703C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{721E8A9F-0CD0-4118-9EB4-AE75F938F925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{721E8A9F-0CD0-4118-9EB4-AE75F938F925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{721E8A9F-0CD0-4118-9EB4-AE75F938F925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{721E8A9F-0CD0-4118-9EB4-AE75F938F925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{721E8A9F-0CD0-4118-9EB4-AE75F938F925} = {7B5D787B-A922-4949-8FFE-2603545C95F1}
+	EndGlobalSection
+EndGlobal

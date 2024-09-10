@@ -1,0 +1,15 @@
+﻿services:
+  pg:
+    image: postgres:16
+  intaker-api:
+    depends_on:
+      - pg
+    image: intaker
+    build:
+      context: .
+      dockerfile: Intaker/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      Database__Connection: <>
+      ServiceBus__Host: <your host>
+ 
